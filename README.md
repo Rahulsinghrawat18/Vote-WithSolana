@@ -1,4 +1,4 @@
-# legacy-voting
+# Let's Vote
 
 ## Getting Started
 

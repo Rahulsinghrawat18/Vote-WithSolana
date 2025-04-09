@@ -28,6 +28,8 @@ pub fn register_candidates(
   candidate.name = name;
   candidate.has_registered = true;
 
+  poll.candidates += 1;
+
   Ok(())
 }
 

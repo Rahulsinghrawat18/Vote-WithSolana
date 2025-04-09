@@ -2,17 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  height: 100%;
+
+/* app/globals.css */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #2f2f2f, #4f4f4f, #1a1a1a);
+  background-size: 300% 300%;
+  animation: gradientShift 3s ease-in-out infinite;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* html,
+  body {
+      height: 100%;
+      background-color: #f9f9f9;
+  }   */
+
 .wallet-adapter-button-trigger {
-  background: rgb(100, 26, 230) !important;
+  background: rgb(18, 15, 25) !important;
   border-radius: 8px !important;
   padding-left: 16px !important;
   padding-right: 16px !important;
 }
+
 .wallet-adapter-dropdown-list,
 .wallet-adapter-button {
   font-family: inherit !important;
