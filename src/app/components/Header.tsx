@@ -16,7 +16,7 @@ const Header = () => {
       <nav className="flex justify-between items-center max-w-6xl mx-auto">
         <div className="flex justify-start items-center space-x-8">
           <Link href="/">
-            <h4 className="text-black text-2xl font-extrabold">Let's Vote</h4>
+            <h4 className="text-black text-2xl font-extrabold">Lets Vote</h4>
           </Link>
 
           <div className="flex justify-start items-center space-x-2 
